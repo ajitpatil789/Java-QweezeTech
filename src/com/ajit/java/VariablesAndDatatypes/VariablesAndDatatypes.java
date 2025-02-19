@@ -2,7 +2,7 @@ package com.ajit.java.VariablesAndDatatypes;
 
 // Variables and Data types.
 
-public class Main {
+public class VariablesAndDatatypes {
     public int ten = 10;
 
     public static void main(String[] args) {
