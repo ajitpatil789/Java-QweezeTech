@@ -1,5 +1,15 @@
 package com.ajit.java.methods;
 
+// Methods is a block of code which only runs when it invoked.
+/*
+    - Access Modifier
+    - Optional Static
+    - Return type
+    - Name
+    - Optional Parameters
+    - Method body
+    - Optional return type
+ */
 public class VarMethod {
     public int a = 12;
     public static int s = 135;
@@ -7,6 +17,11 @@ public class VarMethod {
     public void add(int a, int b) {
         int result = a + b;
         System.out.println(result);
+    }
+
+    private static int addition(int a, int b) {
+        int addResult = a + b;
+        return addResult;
     }
 
     public void demo() {
@@ -38,6 +53,8 @@ public class VarMethod {
         varMethod.sub1();
         varMethod.floatValue();
         System.out.println(varMethod.a);
+        int output = addition(10, 1000);
+        System.out.println(output);
 
     }
 }

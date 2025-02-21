@@ -22,9 +22,9 @@ public class Bank {
     public static void main(String[] args) {
         Bank bank = new Bank();
         bank.withdraw(100);
-        bank.withdraw(600);
-        bank.withdraw(100);
-        bank.withdraw(600);
+        bank.withdraw(400);
+//        bank.withdraw(100);
+//        bank.withdraw(600);
         // bank.deposit(200);
         // Bank bank1 = new Bank();
         // bank1.withdraw(100);
