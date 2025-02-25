@@ -16,7 +16,7 @@ public class CheckNumbersIsGreater {
             System.out.println("Number 1 is greater");
         } else if (num2 > num1) {
             System.out.println("Number second is greater");
-        }
+        } else System.out.println("You entered wrong input");
 
     }
 }
