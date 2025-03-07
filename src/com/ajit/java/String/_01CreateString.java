@@ -6,5 +6,6 @@ public class _01CreateString {
         String str1 = new String("Hello, Java");
         System.out.println(str);
         System.out.println(str1);
+        System.out.println(str.charAt(0));
     }
 }

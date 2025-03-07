@@ -1,13 +1,17 @@
 package com.ajit.java.String;
 
+import java.util.Scanner;
+
 public class ReverseString {
     public static void main(String[] args) {
-        String s = "java";
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the string to reverse: ");
+        String next = scanner.next();
         String reverse = "";
-        for (int i = s.length() - 1; i >= 0; i--) {
-            reverse += s.charAt(i);
+        for (int i = next.length() - 1; i >= 0; i--) {
+            reverse += next.charAt(i);
         }
-        System.out.println(reverse);
+        System.out.println("Reverse String : " + reverse);
 
     }
 }
