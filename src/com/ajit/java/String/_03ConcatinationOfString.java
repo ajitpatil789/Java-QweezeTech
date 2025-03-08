@@ -7,6 +7,10 @@ public class _03ConcatinationOfString {
         String str3 = str1 + str2;
         System.out.println(str1.concat(str2));
         System.out.println(str3);
+
+        // concat using String Buffer
+        StringBuffer buffer = new StringBuffer("Java");
+        System.out.println(buffer.append(" Programming"));
     }
 
 

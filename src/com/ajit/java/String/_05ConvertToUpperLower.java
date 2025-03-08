@@ -1,6 +1,6 @@
 package com.ajit.java.String;
 
-public class _05CovertToUpperLower {
+public class _05ConvertToUpperLower {
     public static void main(String[] args) {
         String s1 = "java programing";
         String s2 = "JAVA";

@@ -5,8 +5,12 @@ public class StringSplit {
         String s = "apple,banana,orange";
         String[] split = s.split(", ");
 
-        for (String fruits : split) {
-            System.out.println(fruits);
+//        for (String fruits : split) {
+//            System.out.println(fruits);
+//        }
+
+        for (int i = 0; i < split.length; i++) {
+            System.out.println(split[i]);
         }
     }
 }

@@ -16,5 +16,12 @@ public class PalindromeCheck {
 //        if (s.equals(reversed)) {
 //            System.out.println("Palindrome");
 //        } else System.out.println("not palindrome");
+
+        // Using StringBuffer
+//        StringBuffer buffer = new StringBuffer("madam");
+//        StringBuffer reversed = buffer.reverse();
+//        System.out.println(reversed);
+//        System.out.println((buffer.equals(reversed) ? "Palindrome" : "Not"));
+
     }
 }

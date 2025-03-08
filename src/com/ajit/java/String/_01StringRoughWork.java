@@ -5,7 +5,7 @@ public class _01StringRoughWork {
         int a = 100;
         String b = "100";
         String c = String.valueOf(a).equals(b) ? "true" : "false";
-        System.out.println(c);
+        System.out.println(c); // true
 //        System.out.println(b.equals(c));
     }
 
