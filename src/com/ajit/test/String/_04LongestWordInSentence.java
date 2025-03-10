@@ -9,14 +9,26 @@ public class _04LongestWordInSentence {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a Sentence: ");
         String sentence = scanner.nextLine();
-        String[] words = sentence.split(" ");
+        scanner.close(); // Always close Scanner when done
+
+        // Split based on non-word characters (spaces, punctuation, etc.)
+        String[] words = sentence.split("\\W+");
+
+
         String longestWord = "";
-        for (int i = 0; i < words.length; i++) {
-            if (words[i].length() > longestWord.length()) {
-                longestWord = words[i];
+        for (String word : words) { // Using enhanced for-loop
+            System.out.println(word);
+            if (word.length() > longestWord.length()) {
+                longestWord = word;
             }
         }
-        System.out.println("Longest Word is : " + longestWord);
+
+        // Handle case where no valid word exists
+        if (longestWord.isEmpty()) {
+            System.out.println("No valid words found.");
+        } else {
+            System.out.println("Longest Word is: " + longestWord);
+        }
     }
 }
 /*

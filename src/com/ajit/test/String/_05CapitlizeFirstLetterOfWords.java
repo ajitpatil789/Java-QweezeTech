@@ -19,6 +19,20 @@ public class _05CapitlizeFirstLetterOfWords {
         }
 
         System.out.println("Capitalized First Letter: " + capital.trim());
+        // Split words using \\s+ to handle multiple spaces
+//        String[] words = sentence.split("\\s+");
+//        StringBuilder capitalizedSentence = new StringBuilder();
+//
+//        for (String word : words) {
+//            if (!word.isEmpty()) { // Check if the word is not empty
+//                capitalizedSentence.append(Character.toUpperCase(word.charAt(0)))
+//                        .append(word.substring(1).toLowerCase())
+//                        .append(" ");
+//            }
+//        }
+//
+//        // Print final capitalized sentence (trim to remove trailing space)
+//        System.out.println("Capitalized First Letter: " + capitalizedSentence.toString().trim());
     }
 }
 

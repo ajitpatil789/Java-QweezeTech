@@ -9,11 +9,15 @@ public class _01ReverseString {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a String: ");
         String str = scanner.next();
-        String reverse = "";
-        for (int i = str.length() - 1; i >= 0; i--) {
-            reverse += str.charAt(i);
-        }
+//        String reverse = "";
+//        for (int i = str.length() - 1; i >= 0; i--) {
+//            reverse += str.charAt(i);
+//        }
+        // Efficient built-in method
+        StringBuilder reverse = new StringBuilder(str);
+        reverse.reverse();
         System.out.println("Reversed String is :" + reverse);
+        scanner.close();
     }
 }
 /*

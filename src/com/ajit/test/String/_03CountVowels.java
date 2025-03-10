@@ -17,6 +17,10 @@ public class _03CountVowels {
             }
         }
         System.out.println("Number of vowels: " + count);
+
+        String str1 = "ajitpatil";
+        int length = str1.replaceAll("[^aeiouAEIOU]", "").length(); //^ (caret) at the beginning negates the set, meaning "match everything except vowels."
+        System.out.println(length);
     }
 }
 /*
