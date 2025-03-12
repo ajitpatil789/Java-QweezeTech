@@ -23,9 +23,9 @@ public class ArraySortingAscending {
         }
         System.out.println();
 
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (arr[i] > arr[j]) {
+        for (int i = 0; i < n; i++) {          // Loop for selecting each element
+            for (int j = i + 1; j < n; j++) {  // Loop for comparing with the rest of the elements
+                if (arr[i] > arr[j]) {         // Swap if the current element is greater than the next
                     int temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
