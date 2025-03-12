@@ -7,7 +7,7 @@ public class VariablesAndDatatypes {
 
     public static void main(String[] args) {
         // Declare and initialize variables of different data types
-        byte byteValue = 12;
+        byte byteValue = 12; //Smallest integer (-128 to 127)
         short shortValue = 123;
         int intValue = 100;
         float floatValue = 10.5f;

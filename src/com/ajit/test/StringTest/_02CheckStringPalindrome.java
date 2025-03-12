@@ -1,4 +1,4 @@
-package com.ajit.test.String;
+package com.ajit.test.StringTest;
 
 import java.util.Scanner;
 
