@@ -7,9 +7,10 @@ public class InputFromUser {
         System.out.print("Enter Range : ");
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        int sum = 0;
+        int sum = 0;    //
         for (int i = 1; i <= n; i++) {
-            sum += i;
+//            sum += i;
+            sum = sum + i;
 
         }
         System.out.println("Sum: " + sum);
