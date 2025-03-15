@@ -1,8 +1,8 @@
-package com.ajit.java;
+package com.ajit.java.Array._2DArray;
 
 import java.util.Scanner;
 
-public class Practice {
+public class TransposeAndMirroring {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Rows: ");
@@ -31,7 +31,7 @@ public class Practice {
             for (int j = 0; j < row; j++) {
                 transpose[i][j] = number[j][i];
                 System.out.print(transpose[i][j] + " ");
-                ;
+                
             }
             System.out.println();
         }

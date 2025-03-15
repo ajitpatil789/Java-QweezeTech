@@ -19,13 +19,20 @@ public class _2DArrayExample {
             }
         }
         //output
-//        System.out.println(Arrays.deepToString(numbers));
+        System.out.println(Arrays.deepToString(numbers));
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 System.out.print(numbers[i][j] + " ");
             }
             System.out.println();
         }
+        // using for each
+//        for (int[] row : numbers) {
+//            for (int value : row) {
+//                System.out.print(value + " ");
+//            }
+//            System.out.println();
+//        }
 //        System.out.println(Arrays.deepToString(numbers));      // Disply output usinf deepToString method
     }
 }

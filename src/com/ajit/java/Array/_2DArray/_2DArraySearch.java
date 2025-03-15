@@ -6,26 +6,44 @@ public class _2DArraySearch {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Rows: ");
-        int rows = scanner.nextInt();
-        System.out.print("Enter column: ");
+        int row = scanner.nextInt();
+        System.out.print("Enter cols: ");
         int cols = scanner.nextInt();
-        int[][] numbers = new int[rows][cols];
-        System.out.println("Enter Elements into 2D Array");
-        //Input
-        for (int i = 0; i < rows; i++) {
+        int[][] number = new int[row][cols];
+        System.out.println("Enter Elements: ");
+        // input
+        for (int i = 0; i < row; i++) {
             for (int j = 0; j < cols; j++) {
-                numbers[i][j] = scanner.nextInt();
+                number[i][j] = scanner.nextInt();
             }
         }
-        System.out.println("Enter element you want to search");
-        int x = scanner.nextInt();
-        for (int i = 0; i < rows; i++) {
+        // display the 2D array
+        System.out.println("2D Array is : ");
+        for (int i = 0; i < row; i++) {
             for (int j = 0; j < cols; j++) {
-                if (numbers[i][j] == x) {
-                    System.out.println("Number is found at location : (" + i + "," + j + ")");
+                System.out.print(number[i][j] + " ");
+            }
+            System.out.println();
+        }
+        // search
+        System.out.println("Enter element to search: ");
+        int x = scanner.nextInt();
+        scanner.close();
+        boolean isFound = false;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (number[i][j] == x) {
+                    System.out.println("Number found at location (" + i + "," + j + ")");
+                    isFound = true;
+                    break;
                 }
             }
-
+            if (isFound) {
+                break;
+            }
+        }
+        if (!isFound) {
+            System.out.println("Number not found");
         }
     }
 }
