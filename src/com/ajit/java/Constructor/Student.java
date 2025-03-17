@@ -21,4 +21,13 @@ public class Student {
         this.name = name;
         this.rollNumber = rollNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", rollNumber=" + rollNumber +
+                ", marks=" + marks +
+                '}';
+    }
 }

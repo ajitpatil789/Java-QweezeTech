@@ -1,0 +1,20 @@
+Java Constructors
+1. What is a Constructor?
+A constructor is a special method in Java used to initialize objects. It is called automatically when an object is created.
+
+Key Features of Constructors:
+✅ The role of a constructor is to provide initial values to an object.
+✅ A constructor is executed at the time of object creation (not before or after).
+✅ It is used to initialize class-level variables.
+✅ The constructor name must be the same as the class name.
+✅ Constructors do not have a return type (not even void).
+✅ Constructors cannot be declared as static, final, or abstract.
+✅ Allowed access modifiers: public, protected, default, and private (used for Singleton patterns).
+
+This Keyword:
+  this keyword refers to the current instance of the curent class.
+    It is used to refer to the current object.
+    It is used to differentiate between instance variables and local variables.
+    It is used to invoke the current class constructor.
+
+    

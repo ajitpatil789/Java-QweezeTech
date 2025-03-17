@@ -7,5 +7,6 @@ public class StudentMain {
         student1.display();
         System.out.println("********************************************************");
         student2.display();
+        System.out.println(student1);
     }
 }
