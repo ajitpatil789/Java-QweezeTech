@@ -1,6 +1,142 @@
 Java Constructors
 1. What is a Constructor?
-A constructor is a special method in Java used to initialize objects. It is called automatically when an object is created.
+
+Constructors in Java
+A constructor in Java is a special method used to initialize objects. Unlike regular methods, a constructor has the same name
+as the class and does not have a return type (not even void). It is automatically called when an object is created.
+
+2. Why Do We Need Constructors?
+To initialize an object when it is created.
+To assign default values to instance variables.
+To enforce some mandatory setup logic before using an object.
+
+3. Characteristics of Constructors
+Same name as the class.
+No return type.
+Called automatically when an object is instantiated.
+Can be overloaded (multiple constructors with different parameters).
+Cannot be static, final, or abstract.
+
+4. Types of Constructors
+A. Default Constructor (No-Argument Constructor)
+A constructor with no parameters.
+If no constructor is defined, Java provides a default constructor.
+Initializes instance variables to their default values.
+
+class Car {
+    String brand;
+    int speed;
+
+    // Default constructor
+    Car() {
+        System.out.println("Car constructor called!");
+        brand = "Unknown";
+        speed = 0;
+    }
+
+    void display() {
+        System.out.println("Brand: " + brand + ", Speed: " + speed);
+    }
+
+    public static void main(String[] args) {
+        Car c = new Car();  // Constructor gets called automatically
+        c.display();
+    }
+}
+
+B. Parameterized Constructor
+A constructor that accepts arguments.
+Used to initialize an object with specific values.
+
+class Car {
+    String brand;
+    int speed;
+
+    // Parameterized constructor
+    Car(String b, int s) {
+        brand = b;
+        speed = s;
+    }
+
+    void display() {
+        System.out.println("Brand: " + brand + ", Speed: " + speed);
+    }
+
+    public static void main(String[] args) {
+        Car c1 = new Car("Toyota", 120);
+        c1.display();
+    }
+}
+
+C. Constructor Overloading
+Defining multiple constructors with different parameters.
+Helps in providing flexibility while creating objects.
+
+class Car {
+    String brand;
+    int speed;
+
+    // Default constructor
+    Car() {
+        this("Unknown", 0);  // Calls parameterized constructor
+    }
+
+    // Parameterized constructor
+    Car(String brand, int speed) {
+        this.brand = brand;
+        this.speed = speed;
+    }
+
+    void display() {
+        System.out.println("Brand: " + brand + ", Speed: " + speed);
+    }
+
+    public static void main(String[] args) {
+        Car c1 = new Car();
+        Car c2 = new Car("Honda", 150);
+
+        c1.display();
+        c2.display();
+    }
+}
+
+5. this() Keyword in Constructors
+Used to call another constructor in the same class.
+Helps in constructor chaining (calling one constructor from another).
+
+class Car {
+    String brand;
+    int speed;
+
+    Car() {
+        this("BMW");  // Calls the constructor with one parameter
+        System.out.println("Default constructor");
+    }
+
+    Car(String brand) {
+        this(brand, 100);  // Calls the constructor with two parameters
+        System.out.println("One-parameter constructor: " + brand);
+    }
+
+    Car(String brand, int speed) {
+        this.brand = brand;
+        this.speed = speed;
+        System.out.println("Two-parameter constructor: Brand = " + brand + ", Speed = " + speed);
+    }
+
+    public static void main(String[] args) {
+        Car c = new Car();
+    }
+}
+
+6. Final Thoughts
+Constructors help initialize objects and enforce necessary setup logic.
+They can be overloaded and chained using this().
+Java automatically provides a default constructor if none is defined.
+The copy constructor creates a duplicate object.
+Methods and constructors differ mainly in their execution and return behavior.
+
+
 
 Key Features of Constructors:
 ✅ The role of a constructor is to provide initial values to an object.
