@@ -1,0 +1,4 @@
+1.Interface methods bydefault public and abstract
+2.Interface methods must be implemented by the class that implements the interface
+3.Interface can have variables but they are bydefault public static final
+4.Interface is nothing but deals beetween cliend and developer
