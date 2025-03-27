@@ -1,4 +1,4 @@
-package com.ajit.java.Array;
+package com.ajit.java.Array._1DArray;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -30,11 +30,13 @@ public class DeleteElement {
             System.out.println("Element is not found");
         } else {
             // Creating a new array with one less size
+            int j = 0;
             int[] newArray = new int[n - 1];
             // Copying elements except the deleted one
-            for (int i = 0, j = 0; i < n; i++) {
+            for (int i = 0; i < n; i++) {
                 if (i != index) {
-                    newArray[j++] = arr[i];
+                    newArray[j] = arr[i];
+                    j++;
                 }
             }
             System.out.println("Updated Array: " + Arrays.toString(newArray));

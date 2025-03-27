@@ -1,18 +1,8 @@
-package com.ajit.java.Array;
+package com.ajit.java.Array._1DArray;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class ReverseArray {
-    //    public static void main(String[] args) {
-//        int[] arr = {1, 2, 3, 4, 5};
-//        int[] temp = new int[arr.length];
-//
-//        for (int i = 0; i < arr.length; i++) {
-//            temp[i] = arr[arr.length - 1 - i];
-//        }
-//        System.out.println("Recersed Array: " + Arrays.toString(temp));
-//    }
+public class ArrayExample {
     public static void main(String[] args) {
 //        int[] arr = new int[5];
 //        arr[0] = 25;
@@ -36,8 +26,8 @@ public class ReverseArray {
         }
 
         System.out.println("You entered:");
-        for (int i = arr.length - 1; i >= 0; i--) {
-            System.out.print("Reversed Array:" + arr[i] + " ");
+        for (int num : arr) {
+            System.out.print(num + " ");
         }
 //        for (int i = 0; i < arr.length; i++) {
 //            System.out.println(arr[i]);
@@ -46,3 +36,6 @@ public class ReverseArray {
 
     }
 }
+
+
+

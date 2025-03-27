@@ -1,16 +1,16 @@
-package com.ajit.java.Array;
+package com.ajit.java.Array._1DArray;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArraySortDecending {
+public class ArraySortingAscending {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter number of elements: ");
         int n = sc.nextInt();
 
-        int[] arr = new int[n];
+        int[] arr = new int[n]; // Array of size n
 
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) {
@@ -23,15 +23,17 @@ public class ArraySortDecending {
         }
         System.out.println();
 
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (arr[i] < arr[j]) {
+        for (int i = 0; i < n; i++) {          // Loop for selecting each element
+            for (int j = i + 1; j < n; j++) {  // Loop for comparing with the rest of the elements
+                if (arr[i] > arr[j]) {         // Swap if the current element is greater than the next
                     int temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
                 }
             }
         }
-        System.out.println("Sorted Array is: " + Arrays.toString(arr));
+        System.out.println("Sorted Array using Bubble sort: " + Arrays.toString(arr));
+        Arrays.sort(arr);
+        System.out.println("Sorted Array using Arrays.toString " + Arrays.toString(arr));
     }
 }

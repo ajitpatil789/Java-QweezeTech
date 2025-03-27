@@ -1,4 +1,4 @@
-package com.ajit.java.Array;
+package com.ajit.java.Array._1DArray;
 
 import java.util.Arrays;
 

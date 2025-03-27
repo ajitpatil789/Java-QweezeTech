@@ -1,6 +1,4 @@
-package com.ajit.java.Array;
-
-import java.util.Arrays;
+package com.ajit.java.Array._1DArray;
 
 public class ArrayEqual {
     public static void main(String[] args) {

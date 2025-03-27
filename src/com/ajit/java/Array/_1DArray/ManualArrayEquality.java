@@ -1,4 +1,4 @@
-package com.ajit.java.Array;
+package com.ajit.java.Array._1DArray;
 
 public class ManualArrayEquality {
     public static void main(String[] args) {

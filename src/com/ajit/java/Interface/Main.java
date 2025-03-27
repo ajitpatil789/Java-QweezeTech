@@ -18,6 +18,8 @@ public class Main {
         obj.fly();
         obj.makeSound();
         obj.display();
+        Animal.animalStatic();
+        obj.birdDefault();
 
 
     }

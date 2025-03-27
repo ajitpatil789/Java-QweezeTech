@@ -1,4 +1,4 @@
-package com.ajit.java.Array;
+package com.ajit.java.Array._1DArray;
 
 public class ForEachExample {
     public static void main(String[] args) {
