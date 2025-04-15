@@ -9,7 +9,6 @@ public class Main {
         Vehicle.service();   // Using static method from the interface
         System.out.println();
         System.out.println();
-
         bike.start();
         bike.stop();
     }
