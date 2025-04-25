@@ -10,7 +10,7 @@ public class A {
     }
 
     public A(int a) {
-      
+
         this.a = a;
         System.out.println(a);
     }

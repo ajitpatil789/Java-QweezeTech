@@ -1,4 +1,4 @@
-package com.ajit.java.Abstraction.Vahicle;
+package com.ajit.java.Abstraction;
 
 abstract public class Vehicle {
     public static final String NAME = "Ajit";

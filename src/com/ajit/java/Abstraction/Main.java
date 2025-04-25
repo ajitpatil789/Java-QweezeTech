@@ -1,4 +1,4 @@
-package com.ajit.java.Abstraction.Vahicle;
+package com.ajit.java.Abstraction;
 
 public class Main {
     public static void main(String[] args) {

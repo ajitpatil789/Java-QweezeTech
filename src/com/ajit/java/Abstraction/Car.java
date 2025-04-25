@@ -1,4 +1,4 @@
-package com.ajit.java.Abstraction.Vahicle;
+package com.ajit.java.Abstraction;
 
 public class Car extends Vehicle {
     public Car(String gender, int age) {
