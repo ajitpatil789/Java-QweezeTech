@@ -44,11 +44,35 @@ public class CrudData {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+    }
 
+    public static void updateStudent() {
+        String sql = "UPDATE student SET course = 'Angular' WHERE id = 1";
+        try {
+            Statement statement = conn.createStatement();
+            int rows = statement.executeUpdate(sql);
+            System.out.println("Student Updated...");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public static void deleteStudent() {
+        String sql = "DELETE FROM student WHERE id = 2";
+        try {
+            Statement statement = conn.createStatement();
+            int rows = statement.executeUpdate(sql);
+            System.out.println("Record is deleted..");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static void main(String[] args) {
 //        addstudent();
-        showStudent();
+//        showStudent();
+//        updateStudent();
+        deleteStudent();
     }
 }
